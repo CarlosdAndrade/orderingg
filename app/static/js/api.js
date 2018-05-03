@@ -22,8 +22,9 @@ const API = (function () {
             });
     }
 
+  
     return {
         getOrder,
-        getProducts
-    }
+        getProducts,
+      }
 })()

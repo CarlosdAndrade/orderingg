@@ -32,10 +32,6 @@
                     <span>Agregar</span>
                 </button>          
 
-                <div class="notification is-warning">
-                   <button class="delete"></button>
-                      <strong>Atencion ...</strong>
-                </div>   
                 
             </div>
         </div>
@@ -51,11 +47,19 @@
         <div class="modal" id="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
+                
                 <header class="modal-card-head">
                     <p class="modal-card-title">Agregar producto</p>
                     <button class="delete" aria-label="close" onclick="Modal.close()">
-                    </header>
-
+                </header>
+                    
+                <header>
+                    <div class="notification is-warning">
+                     <button class="delete" onclick="Modal.close()"></button>
+                     <strong>ATENCION!! </strong> <b> No se pueden agregar productos repetidos</b>
+                    </div>
+                </header>
+                  
                 <section class="modal-card-body">
                     <form>
                         <div class="field">
@@ -119,7 +123,7 @@
                         <td>{{ totalPrice }}</td>
                         <td>{{ eliminar }}</td>
                     </tr>
-             
+             <!--
         
                     <div id="eliminar">
                        <div class="columns">
@@ -131,7 +135,7 @@
                          </div>
                        </div>                   
                       </div>
-        
+        -->
                 {{/ each }}
             </tbody>
             <tfoot>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<!--    <script src="push.js-master/min/push.min.js"></script> -->
+
 </head>
 <body>
+   <!--  esto fue una prueba y lo descartamos, y seguimos trabajando con bulma 
+      <script>
+           Push.create("ATENCION",{
+           body: "La aplicacion no permite agregar productos repetidos a una orden"});
+    </script>
+-->
+
     <main class="container">
         <h1 class="title">Lista de compra</h1>
 
@@ -20,20 +30,36 @@
                 <button class="btn btn-success is-pulled-right" onclick="Modal.open()">
                     <span class="icon"><i class="fas fa-bars"></i></span>
                     <span>Agregar</span>
-                </button>
+                </button>          
+
+                
             </div>
         </div>
+
+
         <div class="columns">
             <div class="column is-12" id="orders">
             </div>
         </div>
+
+
+
         <div class="modal" id="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
                     <p class="modal-card-title">Agregar producto</p>
-                    <button class="delete" aria-label="close" onclick="Modal.close()"></button>
+                    <button class="delete" aria-label="close" onclick="Modal.close()">
                 </header>
+                    
+                <header>
+                    <div class="notification is-warning">
+                     <button class="delete" onclick="Modal.close()"></button>
+                     <strong>ATENCION!! </strong> <b> No se pueden agregar productos repetidos</b>
+                    </div>
+                </header>
+
+                  
                 <section class="modal-card-body">
                     <form>
                         <div class="field">
@@ -51,8 +77,14 @@
                         <div class="field">
                             <label class="label" id="total-price"></label>
                         </div>
+
+                        <div class="field">
+                            <label class="label" id="eliminar"></label>
+                        </div>
+
                     </form>
                 </section>
+
                 <footer class="modal-card-foot">
                     <button class="button is-success">Guardar</button>
                     <button class="button" onclick="Modal.close()">Cancelar</button>
@@ -71,26 +103,43 @@
                 <tr style="font-weight: bold;">
 
                 <tr class="has-text-weight-bold">
-                    <td>ID</td>
+                    <td>ID</td> 
                     <td>Descripción</td>
                     <td>Precio unitario</td>
                     <td>Cantidad</td>
                     <td>Precio total</td>
+                    <td>Eliminar</td>
                 </tr>
+                   
             </thead>
             <tbody>
                 {{# each products }}
+                
                     <tr>
-                        <td>{{ id }}</td>
-                        <td>{{ description }}</td>
-                        <td>{{ price }}</td>
-                        <td>{{ quantity }}</td>
-                        <td>{{ totalPrice }}</td>
-                    </tr>
+                         <td>{{ id }}</td>
+                         <td>{{ name }}</td>           <!-- Nombre del producto -->
+                         <td>{{ price }}</td>
+                         <td>{{ quantity }}</td>
+                         <td>{{ totalPrice }}</td>
+                   </tr>
+             <!--
+        
+                    <div id="eliminar">
+                       <div class="columns">
+                         <div class="column is-11">   
+                                                                  
+                               <button class="btn btn-success is-pulled-right" onclick="Modal.open()">
+                                  <span class="delete"><i class="fas fa-bars"></i></span>
+                                </button>         
+                         </div>
+                       </div>                   
+                      </div>
+        -->
                 {{/ each }}
             </tbody>
             <tfoot>
                 <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>

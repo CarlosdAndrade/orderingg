@@ -47,6 +47,7 @@
         <div class="modal" id="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
+                
                 <header class="modal-card-head">
                     <p class="modal-card-title">Agregar producto</p>
                     <button class="delete" aria-label="close" onclick="Modal.close()">
@@ -116,12 +117,22 @@
                 {{# each products }}
                 
                     <tr>
+
                          <td>{{ id }}</td>
                          <td>{{ name }}</td>           <!-- Nombre del producto -->
                          <td>{{ price }}</td>
                          <td>{{ quantity }}</td>
                          <td>{{ totalPrice }}</td>
                    </tr>
+
+                        <td>{{ id }}</td> 
+                        <td>{{ description }}</td>
+                        <td>{{ price }}</td>
+                        <td>{{ quantity }}</td>
+                        <td>{{ totalPrice }}</td>
+                        <td>{{ eliminar }}</td>
+                    </tr>
+
              <!--
         
                     <div id="eliminar">

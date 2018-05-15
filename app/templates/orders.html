@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<!--    <script src="push.js-master/min/push.min.js"></script> -->
+
 </head>
 <body>
     <main class="container">
@@ -17,21 +20,37 @@
 
         <div class="columns">
             <div class="column is-12">
-                <button class="btn btn-success is-pulled-right" onclick="Modal.open()">
+                   <button class="button is-primary is-pulled-right" onclick="Modal.open()">
                     <span class="icon"><i class="fas fa-bars"></i></span>
                     <span>Agregar</span>
-                </button>
+                </button>          
+                <!--'HOTFIX CAMBIO ACTIVIDAD 2 color del boton agregar'-->
+
             </div>
         </div>
-        
+
+        <div class="columns">
+            <div class="column is-12" id="orders">
+            </div>
+        </div>
 
         <div class="modal" id="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
+                
                 <header class="modal-card-head">
                     <p class="modal-card-title">Agregar producto</p>
-                    <button class="delete" aria-label="close" onclick="Modal.close()"></button>
+                    <button class="delete" aria-label="close" onclick="Modal.close()">
                 </header>
+                    
+                <header>
+                    <div class="notification is-warning">
+                     <button class="delete" onclick="Modal.close()"></button>
+                     <strong>ATENCION!! </strong> <b> No se pueden agregar productos repetidos</b>
+                    </div>
+                </header>
+                <!-- agrego notificacion de que no se pueden agregar productos repetidos, actividad 2-->
+                  
                 <section class="modal-card-body">
                     <form>
                         <div class="field">
@@ -41,17 +60,23 @@
 
                         <div class="field">
                             <label class="label">Cantidad</label>
-                            <div class="control">  
-                              <input id="quantity" class="input" type="number" min="0">
+                            <div class="control">
+                                <input id="quantity" class="input" type="number" min="0">
                             </div>
-                            
                         </div>
-                           
+                        <!-- se agrega min="0" para no tomar valores negativos en la cantidad de prodcutos, ACTIVIDAD 2 bug#1-->
+                        
                         <div class="field">
                             <label class="label" id="total-price"></label>
                         </div>
+
+                        <div class="field">
+                            <label class="label" id="eliminar"></label>
+                        </div>
+
                     </form>
                 </section>
+
                 <footer class="modal-card-foot">
                     <button class="button is-success">Guardar</button>
                     <button class="button" onclick="Modal.close()">Cancelar</button>
@@ -70,27 +95,29 @@
                 <tr style="font-weight: bold;">
 
                 <tr class="has-text-weight-bold">
-
-                    <td>ID</td>
+                    <td>ID</td> 
                     <td>Descripción</td>
                     <td>Precio unitario</td>
                     <td>Cantidad</td>
                     <td>Precio total</td>
                 </tr>
+                   
             </thead>
             <tbody>
                 {{# each products }}
+                
                     <tr>
-                        <td>{{ id }}</td>
-                        <td>{{ description }}</td>
-                        <td>{{ price }}</td>
-                        <td>{{ quantity }}</td>
-                        <td>{{ totalPrice }}</td>
-                    </tr>
+
+                         <td>{{ id }}</td>
+                         <td>{{ name }}</td>           <!-- Nombre del producto -->
+                         <td>{{ price }}</td>
+                         <td>{{ quantity }}</td>
+                         <td>{{ totalPrice }}</td>
                 {{/ each }}
             </tbody>
             <tfoot>
                 <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>

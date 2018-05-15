@@ -5,7 +5,6 @@ from flask import request, jsonify, render_template
 @app.route("/")
 def hello():
     return render_template('orders.html')
-
 @app.route("/product", methods=['GET', 'POST'])
 def products():
     """

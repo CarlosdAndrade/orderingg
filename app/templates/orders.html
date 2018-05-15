@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,38 +11,27 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 <!--    <script src="push.js-master/min/push.min.js"></script> -->
-
 </head>
 <body>
-   <!--  esto fue una prueba y lo descartamos, y seguimos trabajando con bulma 
-      <script>
-           Push.create("ATENCION",{
-           body: "La aplicacion no permite agregar productos repetidos a una orden"});
-    </script>
--->
-
     <main class="container">
         <h1 class="title">Lista de compra</h1>
 
 
         <div class="columns">
             <div class="column is-12">
-                <button class="btn btn-success is-pulled-right" onclick="Modal.open()">
+                   <button class="button is-primary is-pulled-right" onclick="Modal.open()">
                     <span class="icon"><i class="fas fa-bars"></i></span>
                     <span>Agregar</span>
                 </button>          
+                <!--'HOTFIX CAMBIO ACTIVIDAD 2 color del boton agregar'-->
 
-                
             </div>
         </div>
-
 
         <div class="columns">
             <div class="column is-12" id="orders">
             </div>
         </div>
-
-
 
         <div class="modal" id="modal">
             <div class="modal-background"></div>
@@ -59,7 +48,7 @@
                      <strong>ATENCION!! </strong> <b> No se pueden agregar productos repetidos</b>
                     </div>
                 </header>
-
+                <!-- agrego notificacion de que no se pueden agregar productos repetidos, actividad 2-->
                   
                 <section class="modal-card-body">
                     <form>
@@ -74,6 +63,7 @@
                                 <input id="quantity" class="input" type="number" min="0">
                             </div>
                         </div>
+                        <!-- se agrega min="0" para no tomar valores negativos en la cantidad de prodcutos, ACTIVIDAD 2 bug#1-->
 
                         <div class="field">
                             <label class="label" id="total-price"></label>
@@ -109,7 +99,6 @@
                     <td>Precio unitario</td>
                     <td>Cantidad</td>
                     <td>Precio total</td>
-                    <td>Eliminar</td>
                 </tr>
                    
             </thead>
@@ -123,20 +112,6 @@
                          <td>{{ price }}</td>
                          <td>{{ quantity }}</td>
                          <td>{{ totalPrice }}</td>
-
-             <!--
-        
-                    <div id="eliminar">
-                       <div class="columns">
-                         <div class="column is-11">   
-                                                                  
-                               <button class="btn btn-success is-pulled-right" onclick="Modal.open()">
-                                  <span class="delete"><i class="fas fa-bars"></i></span>
-                                </button>         
-                         </div>
-                       </div>                   
-                      </div>
-        -->
                 {{/ each }}
             </tbody>
             <tfoot>

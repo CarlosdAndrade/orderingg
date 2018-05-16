@@ -39,7 +39,7 @@
                 
                 <header class="modal-card-head">
                     <p class="modal-card-title">Agregar producto</p>
-                    <button class="delete" aria-label="close" onclick="Modal.close()">
+                    <button class="delete" aria-label="close" onclick="Modal.close()"></button>
                 </header>
                     
                 <header>
@@ -53,7 +53,7 @@
                 <section class="modal-card-body">
                     <form>
                         <div class="field">
-                            <labe class="label">Seleccionar producto</labe>
+                            <label class="label">Seleccionar producto</label>
                             <div id="select" class="control"></div>
                         </div>
 
@@ -112,6 +112,9 @@
                          <td>{{ price }}</td>
                          <td>{{ quantity }}</td>
                          <td>{{ totalPrice }}</td>
+                         <td><button class="button" onclick="API.deleteProduct(1, {{ id }})"><a href="javascript:location.reload()">Borrar</a></button></td>
+
+<!-- Borra un producto y recarga la pagina para mostrar el cambio -->
                 {{/ each }}
             </tbody>
             <tfoot>

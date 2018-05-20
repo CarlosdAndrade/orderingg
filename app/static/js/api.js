@@ -21,7 +21,6 @@ const API = (function () {
                 return r.json();
             });
     }
-  
     return {
         getOrder,
         getProducts,

@@ -22,7 +22,9 @@
                 <button class="button is-primary is-pulled-right" onclick="refs.modal.open()">
                     <span class="icon"><i class="fas fa-plus"></i></span>
                     <span>Agregar</span>
-                </button>
+                </button>          
+                <!--'HOTFIX CAMBIO ACTIVIDAD 2 color del boton agregar'-->
+
             </div>
         </div>
 
@@ -59,7 +61,7 @@
                         <div class="field">
                             <label class="label">Cantidad</label>
                             <div class="control">
-                                <input id="quantity" class="input" type="number">
+                                <input id="quantity" class="input" type="number" min="0">
                             </div>
                         </div>
                         <!-- se agrega min="0" para no tomar valores negativos en la cantidad de prodcutos, ACTIVIDAD 2 bug#1-->
@@ -88,7 +90,7 @@
 
     <!-- Template handlebars de la tabla -->
     <script id="table-template" type="text/x-handlebars-template">
-        <table class="table is-fullwidth is-hoverable">
+        <table class="table is-fullwidth is-hoverable is-striped">
             <thead>
 
                 <tr style="font-weight: bold;">
@@ -116,6 +118,7 @@
             </tbody>
             <tfoot>
                 <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>

@@ -21,10 +21,7 @@ const API = (function () {
                 return r.json();
             });
     }
-    return {
-        getOrder,
-        getProducts,
-      }
+
     /**
      * Obtiene todos los productos pertenecientes a una orden desde el backend
      *

@@ -3,7 +3,6 @@ import unittest
 
 from flask import json
 from flask_testing import TestCase
-
 from app import create_app, db
 from app.models import Product, Order, OrderProduct
 
@@ -19,7 +18,6 @@ class OrderingTestCase(TestCase):
             TESTING=True
         )
         return app
-
     # Creamos la base de datos de test
     def setUp(self):
         db.session.commit()
@@ -45,13 +43,66 @@ class OrderingTestCase(TestCase):
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
-        # Verifica que la respuesta tenga el estado 200 (OK)
-        self.assert200(resp, "Falló el POST")
-        p = Product.query.all()
+#---------------------------ACTIVIDAD 3 - punto 1)  a) ---------------------------------------------
+    def test_put(self):
+        #Creo la orden
+        o = Order(id= 1)
+        db.session.add(o)
 
-        # Verifica que en la lista de productos haya un solo producto
-        self.assertEqual(len(p), 1, "No hay productos")
+        #Creo el producto
+        p = Product(id= 1, name= 'vaso', price= 500)
+        db.session.add(p)
+
+        orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 1, product= p)
+        db.session.add(orderProduct)
+        db.session.commit()
+        data = {
+            'quantity': 10
+        }
+        self.client.put('order/1/product/1', data=json.dumps(data), content_type='application/json')
+        arg = 1,1
+        prod = OrderProduct.query.get(arg)
+        #self.assertTrue(prod.quantity == 10, "Fallo el metodo PUT")
+        #self.assert200(resp, "Fallo el funcionamiento del metodo PUT")
+
+#--------------------------ACTIVIDAD 3 - punto 1)  c) ------------------------------------------------
+    def test_OrderPrice(self): 
+        
+        #Creo la orden
+        o = Order(id= 1)
+        db.session.add(o)
+        
+        #Creo el producto
+        p = Product(id= 1, name= 'vaso', price= 500)
+        db.session.add(p)
+        
+        #Creo la relacion entre el producto y la orden
+        orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 10, product= p)
+        db.session.add(orderProduct)
+        db.session.commit()
+        
+        #Verifico que el primero y el segundo sean distintos 
+        orden= Order.query.get(1)
+        totalPrice = orden.orderPrice
+        self.assertNotEqual(150, totalPrice, "El precio total no se calcula bien")   
+
+#-----------------------ACTIVIDAD 3 - punto 3)   a)--------------------------------------------------- 
+    def test_delete(self):
+        #Creo la orden
+        o = Order(id= 1)
+        db.session.add(o)
+        #Creo el producto
+        p = Product(id= 1, name= 'cuchara', price= 230)
+        db.session.add(p)
+        #Creo la relacion entre el producto y la orden
+        orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 1, product= p)
+        db.session.add(orderProduct)
+        db.session.commit()
+        
+        resp = self.client.delete('order/1/product/1')
+
+     #   self.assert200(resp, "Fallo el DELETE")
+
 
 if __name__ == '__main__':
     unittest.main()
-

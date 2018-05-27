@@ -1,6 +1,6 @@
 import os
-import unittest
-
+import unittest 
+"""#modulo de unittest, me permite realizar los test de nuestra aplicacion"""
 from flask import json
 from flask_testing import TestCase
 
@@ -9,7 +9,8 @@ from app.models import Product, Order, OrderProduct
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-class OrderingTestCase(TestCase):
+class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nuestros tests
+
     def create_app(self):
         config_name = 'testing'
         app = create_app()
@@ -36,7 +37,7 @@ class OrderingTestCase(TestCase):
         data = json.loads(resp.data)
 
         assert len(data) == 0, "La base de datos tiene productos"
-
+    
     def test_crear_producto(self):
         data = {
             'name': 'Tenedor',
@@ -46,12 +47,37 @@ class OrderingTestCase(TestCase):
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
         # Verifica que la respuesta tenga el estado 200 (OK)
-        self.assert200(resp, "Falló el POST")
+        self.assert200(resp, "Fallo el POST")
         p = Product.query.all()
 
         # Verifica que en la lista de productos haya un solo producto
         self.assertEqual(len(p), 1, "No hay productos")
+       
 
-if __name__ == '__main__':
+#             ACTIVIDAD 3 - punto 2) a)       
+    def test_orderProduct_neg (self): #self tiene la referencia del objeto que llamo al metodo.
+        
+        p = Product (name='mantel', price=70)
+        db.session.add(p)
+        db.session.commit()
+        
+        o = Order(id=1)
+        db.session.add(o)   
+        db.session.commit()
+
+        orderP = OrderProduct(order_id=1, product_id=1,quantity=-5,product=p)      
+        o.products.append(orderP)
+        db.session.add(o)
+        db.session.commit()
+        op = OrderProduct.query.all()
+
+        if len(op) == 0: 
+            print ("No se creo el producto") 
+        else:
+            print ("Se creo el producto")
+        
+
+# El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
+if __name__ == '__main__':  
     unittest.main()
 

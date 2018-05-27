@@ -1,15 +1,20 @@
 import unittest
 import os
+import time
+import threading
 
 from selenium import webdriver
-from flask_testing import LiveServerTestCase
 
 from app import create_app, db
 from app.models import Product, Order, OrderProduct
 
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-class Ordering(LiveServerTestCase):
+
+class Ordering(unittest.TestCase):
+
+    #se crea la base de datos de test
     def create_app(self):
         app = create_app()
         app.config.update(
@@ -29,7 +34,7 @@ class Ordering(LiveServerTestCase):
         db.create_all()
 
         self.driver = webdriver.Chrome()
-
+"""
     def test_title(self):
         driver = self.driver
         driver.get(self.baseURL)
@@ -39,7 +44,6 @@ class Ordering(LiveServerTestCase):
         db.session.remove()
         db.drop_all()
         self.driver.close()
-
+"""
 if __name__ == "__main__":
     unittest.main()
-

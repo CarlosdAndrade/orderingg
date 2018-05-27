@@ -1,0 +1,4 @@
+[
+  "test_unit.py::OrderingTestCase::test_crear_producto", 
+  "test_unit.py::OrderingTestCase::test_iniciar_sin_productos"
+]

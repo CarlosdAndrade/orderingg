@@ -1,0 +1,7 @@
+{
+  "test_e2e.py": true, 
+  "test_e2e.py::LiveServerTestCase": true, 
+  "test_e2e.py::Ordering": true, 
+  "test_unit.py::OrderingTestCase::test_crear_producto": true, 
+  "test_unit.py::OrderingTestCase::test_iniciar_sin_productos": true
+}

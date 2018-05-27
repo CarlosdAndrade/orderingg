@@ -1,0 +1,8 @@
+[
+  "test/test_e2e.py::Ordering::test_selenium_cant_negativa", 
+  "test/test_e2e.py::Ordering::test_title", 
+  "test/test_unit.py::OrderingTestCase::test_GET_funcionamiento", 
+  "test/test_unit.py::OrderingTestCase::test_crear_producto", 
+  "test/test_unit.py::OrderingTestCase::test_iniciar_sin_productos", 
+  "test/test_unit.py::OrderingTestCase::test_orderProduct_neg"
+]

@@ -102,8 +102,11 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         resp = self.client.get('/o/1/product/1')
         self.assert200(resp, "No se cargo el producto")
         #REVISAR SINTAXIS , CONSULTAR!!        
-        
-        
+
+#           ACTIVIDAD 3 punto 2, insciso c
+
+    
+    
 # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 if __name__ == '__main__':  
     unittest.main()

@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 import os 
 import unittest
 
-=======
 import os
 import unittest 
-"""#modulo de unittest, me permite realizar los test de nuestra aplicacion"""
->>>>>>> bug/#2
+
+        #modulo de unittest, me permite realizar los test de nuestra aplicacion
 from flask import json
 from flask_testing import TestCase
 
@@ -109,9 +107,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         self.assert200(resp, "No se cargo el producto")
         #REVISAR SINTAXIS , CONSULTAR!!        
 
-#           ACTIVIDAD 3 punto 2, insciso c
-
-    
+   
     
 # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 if __name__ == '__main__':  

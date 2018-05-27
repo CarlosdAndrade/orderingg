@@ -10,7 +10,7 @@ from app.models import Product, Order, OrderProduct
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nuestros tests
-
+        
     def create_app(self):
         config_name = 'testing'
         app = create_app()
@@ -45,14 +45,14 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         }
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
-
+    
         # Verifica que la respuesta tenga el estado 200 (OK)
         self.assert200(resp, "Fallo el POST")
         p = Product.query.all()
 
         # Verifica que en la lista de productos haya un solo producto
         self.assertEqual(len(p), 1, "No hay productos")
-       
+    
 
 #             ACTIVIDAD 3 - punto 2) a)       
     def test_orderProduct_neg (self): #self tiene la referencia del objeto que llamo al metodo.
@@ -75,8 +75,35 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
             print ("No se creo el producto") 
         else:
             print ("Se creo el producto")
-        
 
+#             ACTIVIDAD 3 - punto 2) b)
+    
+    def test_GET_funcionamiento (self):
+        #creo un producto nuevo
+        p= {
+        'id':1,
+        'name': 'mantel',
+        'price': 70
+          }
+        
+        self.client.post('/product', data=json.dumps(p), content_type='application/json')
+        
+        #creo, guardo la order de este producto nuevo y lo cargo
+        o = Order(id=1)
+        db.session.add(o)
+        db.session.commit()        
+        
+        #voy a usar client de prueba POST y GET
+        op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
+        #Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
+        self.client.post('/o/1/product', data=json.dumps(op), content_type='application/json')
+        
+        #Realizo la solicitud GET que me transmita los datos del client
+        resp = self.client.get('/o/1/product/1')
+        self.assert200(resp, "No se cargo el producto")
+        #REVISAR SINTAXIS , CONSULTAR!!        
+        
+        
 # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 if __name__ == '__main__':  
     unittest.main()

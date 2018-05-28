@@ -49,7 +49,9 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
 
+
      #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
+
     def test_put(self):
         #Creo la orden
         o = Order(id= 1)
@@ -68,9 +70,10 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         self.client.put('order/1/product/1', data=json.dumps(data), content_type='application/json')
         arg = 1,1
         prod = OrderProduct.query.get(arg)
+
         self.assertTrue(prod.quantity == 10, "Fallo el metodo PUT")
         self.assert200(resp, "Fallo el funcionamiento del metodo PUT")
-    
+
         # Verifica que la respuesta tenga el estado 200 (OK)
         self.assert200(resp, "Fallo el POST")
         p = Product.query.all()
@@ -80,6 +83,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
      
 
      #--------------------ACTIVIDAD 3 - punto 1) c) ------------------------------------------------
+    
     def test_OrderPrice(self): 
         
         #Creo la orden
@@ -101,7 +105,9 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         self.assertNotEqual(150, totalPrice, "El precio total no se calcula bien")   
 
 
+
      #--------------------ACTIVIDAD 3 - punto 2) a)-------------------------------------------------------------      
+
     def test_orderProduct_neg (self): #self tiene la referencia del objeto que llamo al metodo.
         
         p = Product (name='mantel', price=70)
@@ -123,8 +129,9 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         else:
             print ("Se creo el producto")
 
+
      #---------------------ACTIVIDAD 3 - punto 2) b)-----------------------------------------------------------
-    
+
     def test_GET_funcionamiento (self):
         #creo un producto nuevo
         p= {
@@ -150,6 +157,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         self.assert200(resp, "No se cargo el producto")
         #REVISAR SINTAXIS , CONSULTAR!!        
 
+
      #-------------------- ACTIVIDAD 3) - punto 3) a)------------------------------------------------------------
    
     def test_borrar(self):
@@ -169,7 +177,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
 
      
      #--------------------- ACTIVIDAD 3) - punto 3) c)-----------------------------------------------------------
-    
+     
     def test_name_vacio(self):
         data = {
             'name': '',
@@ -179,6 +187,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
         assert resp != 200, 'Fallo el test, se creo un producto de nombre vacio'
+
 
  # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 

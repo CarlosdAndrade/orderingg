@@ -48,6 +48,7 @@ class Ordering(unittest.TestCase):
 
      
      #-------------ACTIVIDAD 3 - punto 1)  b) -------------------------------------------------------
+    
     def test_InfoModalEditar(self):
         o = Order(id= 1)
         db.session.add(o)
@@ -74,10 +75,10 @@ class Ordering(unittest.TestCase):
         boton_cerrar_modal.click()
         self.assertTrue(value_prod != "", "No tiene informacion")
         self.assertTrue(value_cant != "", "No tiene informacion")
-     #----------------------------------------------------------------------------------------------------------------
-    
+
+
      # ------------ACTIVIDAD 3 - punto 2) c) -----------------------------------------------------------------------
-    
+
     def test_selenium_cant_negativa(self):
         driver = self.driver
         driver.get(self.baseURL)
@@ -103,6 +104,7 @@ class Ordering(unittest.TestCase):
         self.driver.close()
         self.app_context.pop()
 
+
      #-------------ACTIVIDAD 3  - punto  3)  b) ------------------------------------------------------------------------------
 
     def test_de_selenium_eliminar(self):
@@ -111,6 +113,7 @@ class Ordering(unittest.TestCase):
 
         p = Product(id=1, name='Cuchillo', price=20)
         db.session.add(p)
+
         orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
         db.session.add(orderProduct)
         db.session.commit()

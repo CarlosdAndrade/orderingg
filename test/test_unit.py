@@ -186,7 +186,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
-        assert resp != 200, 'Fallo el test, se creo un producto de nombre vacio'
+        self.assert (resp != 200, 'Fallo el test, se creo un producto de nombre vacio')
 
 
  # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados

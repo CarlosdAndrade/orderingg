@@ -47,7 +47,7 @@ class OrderingTestCase(TestCase):
     def test_put(self):
         #Creo la orden
         o = Order(id= 1)
-        db.session.add(o)
+        db.session.add(o)   
 
         #Creo el producto
         p = Product(id= 1, name= 'vaso', price= 500)

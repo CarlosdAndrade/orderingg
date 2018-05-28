@@ -1,0 +1,101 @@
+1527419582036	geckodriver	INFO	geckodriver 0.18.0
+1527419582067	geckodriver	INFO	Listening on 127.0.0.1:48635
+1527419583352	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527419591123	Marionette	INFO	Listening on port 37959
+1527419591405	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527419611417	geckodriver	INFO	geckodriver 0.18.0
+1527419611424	geckodriver	INFO	Listening on 127.0.0.1:45161
+1527419612665	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527419617975	Marionette	INFO	Listening on port 46459
+1527419618021	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527420069113	geckodriver	INFO	geckodriver 0.18.0
+1527420069120	geckodriver	INFO	Listening on 127.0.0.1:32835
+1527420070360	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527420075665	Marionette	INFO	Listening on port 33087
+1527420075722	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12948, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527420800577	geckodriver	INFO	geckodriver 0.18.0
+1527420800582	geckodriver	INFO	Listening on 127.0.0.1:57831
+1527420801823	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527420807108	Marionette	INFO	Listening on port 32919
+1527420807165	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13195, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527421062667	geckodriver	INFO	geckodriver 0.18.0
+1527421062675	geckodriver	INFO	Listening on 127.0.0.1:57249
+1527421063920	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527421069256	Marionette	INFO	Listening on port 35137
+1527421069283	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13414, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527421318755	geckodriver	INFO	geckodriver 0.18.0
+1527421318762	geckodriver	INFO	Listening on 127.0.0.1:56183
+1527421320001	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527421325191	Marionette	INFO	Listening on port 42011
+1527421325247	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527461535442	geckodriver	INFO	geckodriver 0.18.0
+1527461535495	geckodriver	INFO	Listening on 127.0.0.1:47263
+1527461536762	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527461551453	Marionette	INFO	Listening on port 42501
+1527461551874	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527461938287	geckodriver	INFO	geckodriver 0.18.0
+1527461938295	geckodriver	INFO	Listening on 127.0.0.1:45907
+1527461939515	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527461944915	Marionette	INFO	Listening on port 35295
+1527461944959	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527462547461	geckodriver	INFO	geckodriver 0.18.0
+1527462547469	geckodriver	INFO	Listening on 127.0.0.1:50573
+1527462548699	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527462554479	Marionette	INFO	Listening on port 36763
+1527462554574	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527464735730	geckodriver	INFO	geckodriver 0.18.0
+1527464735737	geckodriver	INFO	Listening on 127.0.0.1:47423
+1527464736973	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527464742190	Marionette	INFO	Listening on port 34543
+1527464742201	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3570, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527465423532	geckodriver	INFO	geckodriver 0.18.0
+1527465423539	geckodriver	INFO	Listening on 127.0.0.1:54027
+1527465424780	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527465430017	Marionette	INFO	Listening on port 44917
+1527465430108	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527466032363	geckodriver	INFO	geckodriver 0.18.0
+1527466032372	geckodriver	INFO	Listening on 127.0.0.1:57019
+1527466033603	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527466039201	Marionette	INFO	Listening on port 40717
+1527466039259	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4008, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527466983798	geckodriver	INFO	geckodriver 0.18.0
+1527466983805	geckodriver	INFO	Listening on 127.0.0.1:58661
+1527466985036	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527466990245	Marionette	INFO	Listening on port 40797
+1527466990299	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4277, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527467506698	geckodriver	INFO	geckodriver 0.18.0
+1527467506707	geckodriver	INFO	Listening on 127.0.0.1:46219
+1527467507943	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527467513177	Marionette	INFO	Listening on port 34437
+1527467513267	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527468120916	geckodriver	INFO	geckodriver 0.18.0
+1527468120923	geckodriver	INFO	Listening on 127.0.0.1:36567
+1527468122168	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527468127350	Marionette	INFO	Listening on port 34585
+1527468127446	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527468145313	geckodriver	INFO	geckodriver 0.18.0
+1527468145321	geckodriver	INFO	Listening on 127.0.0.1:53079
+1527468146556	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527468151762	Marionette	INFO	Listening on port 45809
+1527468151812	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown

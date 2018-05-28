@@ -1,0 +1,7 @@
+{
+  "test/test_e2e.py::Ordering::test_InfoModalEditar": true, 
+  "test/test_e2e.py::Ordering::test_delete": true, 
+  "test/test_e2e.py::Ordering::test_selenium_cant_negativa": true, 
+  "test/test_e2e.py::Ordering::test_title": true, 
+  "test/test_unit.py::OrderingTestCase::test_title": true
+}

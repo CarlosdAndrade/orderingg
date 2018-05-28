@@ -2,7 +2,10 @@ from sqlalchemy import and_
 
 from app import db
 from app.models import Product, Order, OrderProduct
-from flask import request, jsonify, render_template
+#from flask import request, jsonify, render_template
+#NUEVOS PARAMETROS
+from flask import request, jsonify, render_template, abort, current_app
+
 
 from flask import Blueprint
 rest = Blueprint('rest', __name__, template_folder='templates')

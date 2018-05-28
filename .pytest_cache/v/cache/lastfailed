@@ -1,4 +1,0 @@
-{
-  "test/test_unit.py::OrderingTestCase::test_GET_funcionamiento": true, 
-  "test/test_unit.py::OrderingTestCase::test_get_order_pko_producto_pkp": true
-}

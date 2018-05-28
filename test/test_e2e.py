@@ -72,6 +72,27 @@ class Ordering(unittest.TestCase):
         db.drop_all()
         self.driver.close()
         self.app_context.pop()
-    
+
+# Actividad 3 Inciso 3b
+
+    def test_de_selenium_eliminar(self):
+        o = Order(id=1)
+        db.session.add(o)
+
+        p = Product(id=1, name='Cuchillo', price=20)
+        db.session.add(p)
+
+        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
+        db.session.add(orderProduct)
+        db.session.commit()
+
+        driver = self.driver
+        driver.get(self.baseURL)
+        time.sleep(4)
+        delete_product_button = driver.find_element_by_xpath(
+            '/html/body/main/div[2]/div/table/tbody/tr[1]/td[6]/button[2]')
+        delete_product_button.click()
+        time.sleep(4)
+        self.assertRaises(NoSuchElementException, driver.find_element_by_xpath, "xpath")
 if __name__ == "__main__":
     unittest.main()

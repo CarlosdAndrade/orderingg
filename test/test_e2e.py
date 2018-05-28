@@ -76,13 +76,13 @@ class Ordering(unittest.TestCase):
 # Actividad 3 Inciso 3b
 
     def test_de_selenium_eliminar(self):
-        o = Order(id=1)
-        db.session.add(o)
+        q = Order(id=1)
+        db.session.add(q)
 
-        p = Product(id=1, name='Cuchillo', price=20)
-        db.session.add(p)
+        m = Product(id=1, name='Cuchillo', price=20)
+        db.session.add(m)
 
-        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
+        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=m)
         db.session.add(orderProduct)
         db.session.commit()
 
@@ -94,5 +94,6 @@ class Ordering(unittest.TestCase):
         delete_product_button.click()
         time.sleep(4)
         self.assertRaises(NoSuchElementException, driver.find_element_by_xpath, "xpath")
-if __name__ == "__main__":
+
+  if __name__ == "__main__":
     unittest.main()

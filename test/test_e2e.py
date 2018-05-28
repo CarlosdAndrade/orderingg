@@ -76,13 +76,13 @@ class Ordering(unittest.TestCase):
 # Actividad 3 Inciso 3b
 
     def test_de_selenium_eliminar(self):
-        q = Order(id=1)
-        db.session.add(q)
+        o = Order(id=1)
+        db.session.add(o)
 
-        m = Product(id=1, name='Cuchillo', price=20)
-        db.session.add(m)
+        p = Product(id=1, name='Cuchillo', price=20)
+        db.session.add(p)
 
-        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=m)
+        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
         db.session.add(orderProduct)
         db.session.commit()
 

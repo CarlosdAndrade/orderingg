@@ -1,4 +1,6 @@
 [
   "test/test_e2e.py::Ordering::test_InfoModalEditar", 
+  "test/test_e2e.py::Ordering::test_de_selenium_eliminar", 
+  "test/test_e2e.py::Ordering::test_selenium_cant_negativa", 
   "test/test_e2e.py::Ordering::test_title"
 ]

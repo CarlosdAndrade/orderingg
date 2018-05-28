@@ -2,11 +2,7 @@ from sqlalchemy import and_
 
 from app import db
 from app.models import Product, Order, OrderProduct
-#from flask import request, jsonify, render_template
-#NUEVOS PARAMETROS
 from flask import request, jsonify, render_template, abort, current_app
-
-
 from flask import Blueprint
 rest = Blueprint('rest', __name__, template_folder='templates')
 
@@ -117,7 +113,9 @@ def order_product_detail(pk_order, pk_product):
         return jsonify(order_product_json)
 
     if request.method == 'DELETE':
-        db.session.delete(order_product)
+        db.session.delete(order_product) 
 
     db.session.commit()
     return jsonify(order_product_json)
+
+

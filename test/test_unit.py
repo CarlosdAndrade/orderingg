@@ -48,7 +48,6 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
-"""
 
      #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
 
@@ -84,7 +83,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
 
      #--------------------ACTIVIDAD 3 - punto 1) c) ------------------------------------------------
     
-     def test_OrderPrice(self): 
+    def test_OrderPrice(self): 
         
         #Creo la orden
         o = Order(id= 1)
@@ -104,10 +103,12 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         totalPrice = orden.orderPrice
         self.assertNotEqual(150, totalPrice, "El precio total no se calcula bien")   
 
-"""
-     #                      ACTIVIDAD 3 - punto 2) a)  
 
-    def test_orderProduct_neg (self):   #self tiene la referencia del objeto que llamo al metodo.        p = Product (name='mantel', price=70)
+
+        # ACTIVIDAD 3 - punto 2) a)  
+
+    def test_orderProduct_neg (self):   #self tiene la referencia del objeto que llamo al metodo.        
+        p = Product (name='mantel', price=70)
         db.session.add(p)
         db.session.commit()
         
@@ -126,37 +127,39 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         else:
             print ("Se creo el producto")
 
- #                        ACTIVIDAD 3 - punto 2) b) #
 
-	def test_Get_funcionamiento (self):
-		#creo un producto nuevo
-		p= {
-		'id':1,
-		'name': 'mantel',
-		'price': 70
-		  }
-		
-		self.client.post('/product', data=json.dumps(p), content_type='application/json')
-		
-		#creo, guardo la order de este producto nuevo y lo cargo
-		o = Order(id=1)
-		db.session.add(o)
-		db.session.commit()        
-		
-		#voy a usar client de prueba POST y GET
-		op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
-		#Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
-		self.client.post('/order/1/product', data=json.dumps(op), content_type='application/json')
-		
-		#Realizo la solicitud GET que me transmita los datos del client
-		resp = self.client.get('/order/1/product/1')
-		self.assert200(resp, "No se cargo el producto")
-		#CORRECION VISTA EN CLASE, SE MODIFICO EL ENDPOINT, TENIA MAL EL CONCEPTO!!        
-"""
+        #  ACTIVIDAD 3 - punto 2) b) 
+
+
+    def test_Get_funcionamiento (self):
+        #creo un producto nuevo
+    	p= {
+    	'id':1,
+    	'name': 'mantel',
+    	'price': 70
+    	  }
+    	
+    	self.client.post('/product', data=json.dumps(p), content_type='application/json')
+    	
+    	#creo, guardo la order de este producto nuevo y lo cargo
+    	o = Order(id=1)
+    	db.session.add(o)
+    	db.session.commit()        
+    	
+    	#voy a usar client de prueba POST y GET
+    	op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
+    	#Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
+    	self.client.post('/order/1/product', data=json.dumps(op), content_type='application/json')
+    	
+    	#Realizo la solicitud GET que me transmita los datos del client
+    	resp = self.client.get('/order/1/product/1')
+    	self.assert200(resp, "No se cargo el producto")
+    	#CORRECION VISTA EN CLASE, SE MODIFICO EL ENDPOINT, TENIA MAL EL CONCEPTO!!        
+
 
      #-------------------- ACTIVIDAD 3) - punto 3) a)------------------------------------------------------------
    
-def test_borrar(self):
+    def test_borrar(self):
       o = Order(id=1)
       db.session.add(o)
 
@@ -184,8 +187,7 @@ def test_borrar(self):
 
         #self.assert (resp != 200, 'Fallo el test, se creo un producto de nombre vacio')
 
-"""
- # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 
+# El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 if __name__ == '__main__':
     unittest.main()

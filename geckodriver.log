@@ -3105,3 +3105,196 @@ observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
 1527523568623	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
 1527523573718	Marionette	INFO	Listening on port 34683
 1527523573755	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527652926962	geckodriver	INFO	geckodriver 0.20.1
+1527652927024	geckodriver	INFO	Listening on 127.0.0.1:39583
+1527652927967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.HEfP2Ok6mZ86"
+1527652937462	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652937462	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652937463	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652937569	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652937570	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652937571	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652937617	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652937617	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652937618	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652937666	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652937667	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652937668	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652937698	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652937699	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652937699	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652937749	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652937750	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652937750	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652944793	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652944794	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652944794	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652944794	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652944795	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652944795	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652944830	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652944837	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652944844	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652944850	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652944857	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652944862	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652944868	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652945012	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652945013	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652945013	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652945013	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652945013	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652945013	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652953597	Marionette	INFO	Listening on port 33585
+1527652953832	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527652978114	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527652982021	geckodriver	INFO	geckodriver 0.20.1
+1527652982032	geckodriver	INFO	Listening on 127.0.0.1:48979
+1527652983145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XT9ISyRD9UaL"
+1527652985747	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652985747	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652985748	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652985785	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652985785	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652985787	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652985818	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652985818	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652985819	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652985847	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652985848	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652985850	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652985877	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652985877	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652985877	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652985909	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652985909	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652985910	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652986480	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652986481	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652986481	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652986482	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652986482	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652986482	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652986517	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652986525	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652986531	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652986537	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652986543	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652986549	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652986554	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652986555	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652986555	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652986555	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652986555	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652986555	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652986585	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527652986586	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527652986586	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527652986586	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527652986586	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527652986586	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527652989778	Marionette	INFO	Listening on port 33937
+1527652989838	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527653012290	geckodriver	INFO	geckodriver 0.20.1
+1527653012300	geckodriver	INFO	Listening on 127.0.0.1:55933
+1527653013298	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DzGZxs5ibSve"
+1527653015215	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015215	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015216	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015245	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015245	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015246	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015289	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015289	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015290	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015317	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015319	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015320	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015349	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015349	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015350	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015380	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015380	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015381	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015725	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015725	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015726	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015726	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015726	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015726	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015762	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015769	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015776	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015783	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015789	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015794	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015800	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653015828	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653015828	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653015829	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653015829	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653015829	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653015829	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653018657	Marionette	INFO	Listening on port 39379
+1527653018756	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527653032288	geckodriver	INFO	geckodriver 0.20.1
+1527653032297	geckodriver	INFO	Listening on 127.0.0.1:34505
+1527653033297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tMSLpkUkDQIl"
+1527653035453	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653035453	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653035454	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653035483	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653035484	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653035485	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653035519	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653035519	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653035520	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653035547	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653035548	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653035548	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653035579	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653035579	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653035580	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653035609	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653035610	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653035610	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653035971	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653035972	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653035972	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653035973	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653035973	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653035973	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653036008	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653036016	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653036023	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653036029	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653036035	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653036040	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653036046	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653036072	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
+1527653036072	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
+1527653036072	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
+1527653036072	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
+1527653036072	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
+1527653036073	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
+1527653039161	Marionette	INFO	Listening on port 43435
+1527653039246	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

@@ -2,9 +2,7 @@ from sqlalchemy import and_
 
 from app import db
 from app.models import Product, Order, OrderProduct
-#NUEVOS PARAMETROS
 from flask import request, jsonify, render_template, abort, current_app
-
 from flask import Blueprint
 rest = Blueprint('rest', __name__, template_folder='templates')
 
@@ -115,19 +113,7 @@ def order_product_detail(pk_order, pk_product):
         return jsonify(order_product_json)
 
     if request.method == 'DELETE':
-        db.session.delete(order_product)
+        db.session.delete(order_product) 
 
     db.session.commit()
     return jsonify(order_product_json)
-
-#AGREGO ESTAS LINEAS DESDE LA REPO ORIGINAL POR PROBLEMAS AL CORRER SELENIUM
-    @rest.route('/shutdown')
-    def server_shutdown():
-        if not current_app.testing:
-            abort(404)
-            shutdown = request.environ.get('werkzeug.server.shutdown')
-            if not shutdown:
-                abort(500)
-
-            shutdown()
-            return 'Shutting down...'

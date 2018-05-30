@@ -2911,208 +2911,197 @@ JavaScript warning: http://localhost:5000/static/js/api.js, line 94: unreachable
 1527649987633	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: http://localhost:5000/static/js/api.js, line 94: unreachable code after return statement
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-1527650075469	geckodriver	INFO	geckodriver 0.20.1
-1527650075479	geckodriver	INFO	Listening on 127.0.0.1:34795
-1527650076479	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6ajR4pN6mhX6"
-1527650078253	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078253	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078254	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078286	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078287	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078287	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078322	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078322	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078323	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078352	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078352	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078353	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078381	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078381	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078382	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078414	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078414	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078415	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078762	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078762	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078763	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078763	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078763	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078763	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078800	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078807	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078814	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078820	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078826	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078832	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078837	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078837	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078838	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078838	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078838	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078838	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650078868	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650078868	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650078868	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650078869	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650078869	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650078869	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650082944	Marionette	INFO	Listening on port 41589
-1527650083153	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: http://localhost:5000/static/js/api.js, line 94: unreachable code after return statement
+1527517034290	geckodriver	INFO	geckodriver 0.18.0
+1527517034296	geckodriver	INFO	Listening on 127.0.0.1:58935
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-1527650103386	geckodriver	INFO	geckodriver 0.20.1
-1527650103395	geckodriver	INFO	Listening on 127.0.0.1:46731
-1527650104396	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FeplH8PBTKGZ"
-1527650107436	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650107437	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650107438	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650107473	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650107473	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650107474	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650107505	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650107505	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650107506	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650107535	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650107536	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650107536	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650107573	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650107573	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650107574	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650107613	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650107614	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650107614	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650108551	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650108551	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650108552	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650108552	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650108553	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650108553	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650108590	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650108597	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650108605	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650108615	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650108624	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650108632	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650108640	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650108640	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650108640	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650108640	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650108641	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650108641	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650108718	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650112479	Marionette	INFO	Listening on port 41829
-1527650112577	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: http://localhost:5000/static/js/api.js, line 94: unreachable code after return statement
+1527517035542	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517040569	Marionette	INFO	Listening on port 33583
+1527517040691	Marionette	WARN	TLS certificate errors will be ignored for this session
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-1527650371412	geckodriver	INFO	geckodriver 0.20.1
-1527650371422	geckodriver	INFO	Listening on 127.0.0.1:41683
-1527650372436	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wbKdfETNB08w"
-1527650374611	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650374612	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650374613	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650374643	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650374643	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650374644	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650374677	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650374678	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650374678	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650374704	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650374705	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650374706	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650374736	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650374737	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650374737	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650374768	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650374769	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650374769	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650375142	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650375143	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650375143	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650375143	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650375144	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650375144	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650375182	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650375189	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650375195	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650375202	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650375207	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650375213	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650375219	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650375248	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650379619	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
-onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
-_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
-Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
-uninit()@resource://activity-stream/lib/Store.jsm:166
-uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
-uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
-shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
-callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2753
-observe()@resource://gre/modules/addons/XPIProvider.jsm:1669
-1527650381680	Marionette	INFO	Listening on port 34065
-1527650381799	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517049236	geckodriver	INFO	geckodriver 0.18.0
+1527517049244	geckodriver	INFO	Listening on 127.0.0.1:54525
+1527517050478	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517055782	Marionette	INFO	Listening on port 41025
+1527517055850	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517059333	geckodriver	INFO	geckodriver 0.18.0
+1527517059341	geckodriver	INFO	Listening on 127.0.0.1:59227
+1527517060563	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517066175	Marionette	INFO	Listening on port 40533
+1527517066204	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517069921	geckodriver	INFO	geckodriver 0.18.0
+1527517069931	geckodriver	INFO	Listening on 127.0.0.1:48419
+1527517071160	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517076544	Marionette	INFO	Listening on port 39783
+1527517076624	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517078227	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-1527650389194	geckodriver	INFO	geckodriver 0.20.1
-1527650389205	geckodriver	INFO	Listening on 127.0.0.1:51675
-1527650390205	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.19uT12SljQDN"
-1527650392051	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392051	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392052	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392088	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392088	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392090	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392122	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392122	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392123	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392151	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392152	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392153	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392184	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392184	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392184	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392215	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392215	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392215	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392577	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392578	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392578	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392579	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392579	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392579	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392614	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392621	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392627	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392633	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392639	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392645	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392650	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392650	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392650	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392651	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392651	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392651	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650392681	addons.xpi-utils	WARN	Add-on langpack-es-AR@firefox.mozilla.org is not correctly signed.
-1527650392681	addons.xpi-utils	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not correctly signed.
-1527650392681	addons.xpi-utils	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not correctly signed.
-1527650392681	addons.xpi-utils	WARN	Add-on langpack-es-ES@firefox.mozilla.org is not correctly signed.
-1527650392681	addons.xpi-utils	WARN	Add-on langpack-es-MX@firefox.mozilla.org is not correctly signed.
-1527650392682	addons.xpi-utils	WARN	Add-on langpack-es-CL@firefox.mozilla.org is not correctly signed.
-1527650395785	Marionette	INFO	Listening on port 42351
-1527650395863	Marionette	WARN	TLS certificate errors will be ignored for this session
-[Parent 5205, Gecko_IOThread] WARNING: pipe error (41): Conexión reinicializada por la máquina remota: file /build/firefox-kRfDnc/firefox-61.0~b8+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1527517080441	geckodriver	INFO	geckodriver 0.18.0
+1527517080447	geckodriver	INFO	Listening on 127.0.0.1:36947
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527517081809	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527517087254	Marionette	INFO	Listening on port 42683
+1527517087352	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527517113133	geckodriver	INFO	geckodriver 0.18.0
+1527517113141	geckodriver	INFO	Listening on 127.0.0.1:56029
+1527517114381	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517119422	Marionette	INFO	Listening on port 37205
+1527517119519	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517123257	geckodriver	INFO	geckodriver 0.18.0
+1527517123268	geckodriver	INFO	Listening on 127.0.0.1:41897
+1527517124497	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517129744	Marionette	INFO	Listening on port 46475
+1527517129822	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517133202	geckodriver	INFO	geckodriver 0.18.0
+1527517133207	geckodriver	INFO	Listening on 127.0.0.1:41659
+1527517134458	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527517141398	Marionette	INFO	Listening on port 36637
+1527517141420	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517144990	geckodriver	INFO	geckodriver 0.18.0
+1527517144996	geckodriver	INFO	Listening on 127.0.0.1:42015
+1527517146257	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517152022	Marionette	INFO	Listening on port 39449
+1527517152093	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527517219758	geckodriver	INFO	geckodriver 0.18.0
+1527517219765	geckodriver	INFO	Listening on 127.0.0.1:58219
+1527517221006	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517225980	Marionette	INFO	Listening on port 38439
+1527517226045	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 5574, Chrome_ChildThread] WARNING: pipe error: Tubería rota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1527517243030	geckodriver	INFO	geckodriver 0.18.0
+1527517243038	geckodriver	INFO	Listening on 127.0.0.1:48683
+1527517244272	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517249364	Marionette	INFO	Listening on port 38473
+1527517249406	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517263812	geckodriver	INFO	geckodriver 0.18.0
+1527517263819	geckodriver	INFO	Listening on 127.0.0.1:56081
+1527517265057	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517270158	Marionette	INFO	Listening on port 39315
+1527517270202	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527517281043	geckodriver	INFO	geckodriver 0.18.0
+1527517281050	geckodriver	INFO	Listening on 127.0.0.1:38045
+1527517282283	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527517287377	Marionette	INFO	Listening on port 40303
+1527517287410	Marionette	WARN	TLS certificate errors will be ignored for this session
+=======
+1527520508600	geckodriver	INFO	geckodriver 0.18.0
+1527520508606	geckodriver	INFO	Listening on 127.0.0.1:34799
+1527520509850	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527520514918	Marionette	INFO	Listening on port 32833
+1527520514976	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527520535214	geckodriver	INFO	geckodriver 0.18.0
+1527520535224	geckodriver	INFO	Listening on 127.0.0.1:42675
+1527520536458	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527520541448	Marionette	INFO	Listening on port 41219
+1527520541518	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527520556585	geckodriver	INFO	geckodriver 0.18.0
+1527520556593	geckodriver	INFO	Listening on 127.0.0.1:35753
+1527520557828	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527520563013	Marionette	INFO	Listening on port 46565
+1527520563073	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527520571819	geckodriver	INFO	geckodriver 0.18.0
+1527520571828	geckodriver	INFO	Listening on 127.0.0.1:40285
+1527520573057	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527520578103	Marionette	INFO	Listening on port 33453
+1527520578212	Marionette	WARN	TLS certificate errors will be ignored for this session
+>>>>>>> bug/#1
+1527522908253	geckodriver	INFO	geckodriver 0.18.0
+1527522908261	geckodriver	INFO	Listening on 127.0.0.1:49555
+1527522909532	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527522914959	Marionette	INFO	Listening on port 45381
+1527522915103	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+1527522956503	geckodriver	INFO	geckodriver 0.18.0
+1527522956510	geckodriver	INFO	Listening on 127.0.0.1:57845
+1527522957974	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527522963910	Marionette	INFO	Listening on port 37625
+1527522964027	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523288805	geckodriver	INFO	geckodriver 0.18.0
+1527523288813	geckodriver	INFO	Listening on 127.0.0.1:48839
+1527523290097	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523295863	Marionette	INFO	Listening on port 44827
+1527523295935	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527523315407	geckodriver	INFO	geckodriver 0.18.0
+1527523315413	geckodriver	INFO	Listening on 127.0.0.1:50417
+1527523316744	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523322423	Marionette	INFO	Listening on port 39825
+1527523322488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523323364	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527523329533	geckodriver	INFO	geckodriver 0.18.0
+1527523329542	geckodriver	INFO	Listening on 127.0.0.1:32849
+1527523330850	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523336559	Marionette	INFO	Listening on port 38691
+1527523336611	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 9588, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00CC,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1527523342771	geckodriver	INFO	geckodriver 0.18.0
+1527523342779	geckodriver	INFO	Listening on 127.0.0.1:38265
+1527523344119	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523350378	Marionette	INFO	Listening on port 41691
+1527523350459	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523376022	geckodriver	INFO	geckodriver 0.18.0
+1527523376029	geckodriver	INFO	Listening on 127.0.0.1:39437
+1527523377326	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523383234	Marionette	INFO	Listening on port 39359
+1527523383295	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527523438371	geckodriver	INFO	geckodriver 0.18.0
+1527523438377	geckodriver	INFO	Listening on 127.0.0.1:42947
+1527523439673	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523445779	Marionette	INFO	Listening on port 41127
+1527523445856	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1527523484288	geckodriver	INFO	geckodriver 0.18.0
+1527523484296	geckodriver	INFO	Listening on 127.0.0.1:38545
+1527523485575	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523507574	geckodriver	INFO	geckodriver 0.18.0
+1527523507580	geckodriver	INFO	Listening on 127.0.0.1:50495
+1527523508822	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523514127	Marionette	INFO	Listening on port 34391
+1527523514175	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523531267	geckodriver	INFO	geckodriver 0.18.0
+1527523531274	geckodriver	INFO	Listening on 127.0.0.1:58195
+1527523532511	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523537589	Marionette	INFO	Listening on port 38739
+1527523537645	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523552096	geckodriver	INFO	geckodriver 0.18.0
+1527523552102	geckodriver	INFO	Listening on 127.0.0.1:34745
+1527523553346	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523558479	Marionette	INFO	Listening on port 45997
+1527523558601	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527523567375	geckodriver	INFO	geckodriver 0.18.0
+1527523567384	geckodriver	INFO	Listening on 127.0.0.1:60369
+1527523568623	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1527523573718	Marionette	INFO	Listening on port 34683
+1527523573755	Marionette	WARN	TLS certificate errors will be ignored for this session

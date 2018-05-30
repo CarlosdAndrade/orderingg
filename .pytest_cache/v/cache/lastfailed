@@ -1,7 +1,8 @@
 {
-  "test/test_unit.py::OrderingTestCase::test_GET_funcionamiento": true, 
-  "test/test_unit.py::OrderingTestCase::test_crear_producto": true, 
+  "test/test_e2e.py::Ordering::test_de_selenium_eliminar": true, 
+  "test/test_e2e.py::Ordering::test_delete": true, 
+  "test/test_unit.py::OrderingTestCase": true, 
   "test/test_unit.py::OrderingTestCase::test_get_order_pko_producto_pkp": true, 
-  "test/test_unit.py::OrderingTestCase::test_iniciar_sin_productos": true, 
-  "test/test_unit.py::OrderingTestCase::test_orderProduct_neg": true
+  "test/test_unit.py::OrderingTestCase::test_put": true, 
+  "test/test_unit.py::TestCase": true
 }

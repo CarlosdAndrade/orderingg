@@ -100,12 +100,12 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         #voy a usar client de prueba POST y GET
         op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
         #Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
-        self.client.post('/o/1/product', data=json.dumps(op), content_type='application/json')
+        self.client.post('/order/1/product', data=json.dumps(op), content_type='application/json')
         
         #Realizo la solicitud GET que me transmita los datos del client
-        resp = self.client.get('/o/1/product/1')
+        resp = self.client.get('/order/1/product/1')
         self.assert200(resp, "No se cargo el producto")
-        #REVISAR SINTAXIS , CONSULTAR!!        
+        #CORRECION VISTA EN CLASE, SE MODIFICO EL ENDPOINT, TENIA MAL EL CONCEPTO!!        
 
    
     

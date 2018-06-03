@@ -48,55 +48,7 @@ class Ordering(unittest.TestCase):
 
 
      
-     #------------------------------ACTIVIDAD 3 - punto 1)  b) -------------------------------------------------------
-    def test_InfoModalEditar(self):
-        o = Order(id= 1)
-        db.session.add(o)
-        p = Product(id= 1, name= 'vaso', price= 500)
-        db.session.add(p)
-
-        orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 1, product= p)
-        db.session.add(orderProduct)
-        db.session.commit()
- 
-        driver = self.driver
-        driver.get(self.baseURL)
-        time.sleep(5)
-
-        edit_product_button = driver.find_element_by_xpath('/html/body/main/div[2]/div/table/tbody/tr[1]/td[6]/button[1]')
-        edit_product_button.click()
-
-        producto = driver.find_element_by_xpath('//*[@id="select-prod"]')
-        cantidad = driver.find_element_by_xpath('//*[@id="quantity"]')
-        value_prod = producto.get_attribute("value")
-        value_cant = cantidad.get_attribute("value")
-        boton_cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
-        time.sleep(5)
-        boton_cerrar_modal.click()
-        self.assertTrue(value_prod != "", "No tiene informacion")
-        self.assertTrue(value_cant != "", "No tiene informacion")
-    
-    
-      
-
-      #         ACTIVIDAD 3 punto 2, incsiso c
-    
-    def test_selenium_cant_negativa(self):
-        driver = self.driver
-        driver.get(self.baseURL)
-
-        boton_agregar = driver.find_element_by_xpath('/html/body/main/div[1]/div/button')
-        boton_agregar.click()
-
-        cant =  driver.find_element_by_xpath('//*[@id="quantity"]')
-        cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
-
-
-        time.sleep(4)
-        cerrar_modal.click()
-
-        self.assertTrue(cant >= 1 , "valor negativo")
-
+     
         
     def tearDown(self):
         self.driver.get('http://localhost:5000/shutdown')
@@ -105,28 +57,6 @@ class Ordering(unittest.TestCase):
         db.drop_all()
         self.driver.close()
         self.app_context.pop()
-
-      # Actividad 3 Inciso 3b
-
-    def test_de_selenium_eliminar(self):
-        o = Order(id=1)
-        db.session.add(o)
-
-        p = Product(id=1, name='Cuchillo', price=20)
-        db.session.add(p)
-
-        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
-        db.session.add(orderProduct)
-        db.session.commit()
-
-        driver = self.driver
-        driver.get(self.baseURL)
-        time.sleep(4)
-        delete_product_button = driver.find_element_by_xpath(
-            '/html/body/main/div[2]/div/table/tbody/tr[1]/td[6]/button[2]')
-        delete_product_button.click()
-        time.sleep(4)
-        self.assertRaises(NoSuchElementException, driver.find_element_by_xpath, "xpath")
 
 if __name__ == "__main__":
     unittest.main()

@@ -37,7 +37,7 @@ class Ordering(unittest.TestCase):
         time.sleep(1)
 
         self.driver = webdriver.Firefox()
-
+        
     def test_title(self):
         driver = self.driver
         driver.get(self.baseURL)
@@ -57,6 +57,7 @@ class Ordering(unittest.TestCase):
 
         orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 1, product= p)
         db.session.add(orderProduct)
+
         db.session.commit()
  
         driver = self.driver
@@ -75,38 +76,48 @@ class Ordering(unittest.TestCase):
         boton_cerrar_modal.click()
         self.assertTrue(value_prod != "", "No tiene informacion")
         self.assertTrue(value_cant != "", "No tiene informacion")
-
-
+    
      # ------------ACTIVIDAD 3 - punto 2) c) -----------------------------------------------------------------------
-
+    
     def test_selenium_cant_negativa(self):
+
+        #Primero levanto la base y dejo corriendo el server para que se ejecuten los test
+        #no necesito crear ningun producto si lo que quiero testear es la cantidad negativa, lo hago con el producto vaso
         driver = self.driver
         driver.get(self.baseURL)
 
-        boton_agregar = driver.find_element_by_xpath('/html/body/main/div[1]/div/button')
-        boton_agregar.click()
-
-        cant =  driver.find_element_by_xpath('//*[@id="quantity"]')
-        cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
-
-
-        time.sleep(4)
-        cerrar_modal.click()
-
-        self.assertTrue(cant >= 1 , "valor negativo")
-
+        #abro el modal con un click en Agregar
+        selec_boton_agregar = driver.find_element_by_xpath('/html/body/main/div[1]/div/button')
+        selec_boton_agregar.click()
         
-    def tearDown(self):
-        self.driver.get('http://localhost:5000/shutdown')
+        #selecciono un producto 
+        selec_producto = driver.find_element_by_xpath('//*[@id="select-prod"]')
+        selec_producto.click()
+        
+        #selecciono el producto individual
+        selecciono_vaso = driver.find_element_by_xpath('/html/body/main/div[3]/div[2]/section/form/div[1]/div/div/select/option[5]')
+        selecciono_vaso.click()
 
-        db.session.remove()
-        db.drop_all()
-        self.driver.close()
-        self.app_context.pop()
+        #agrego una cantidad negativa y trato de guardarlo
+        canti= driver.find_element_by_xpath('//*[@id="quantity"]')
+        canti.clear() #elimino el 1 predeterminado que ya esta cargado y fuerzo el ingreso del -2
+        canti.send_keys("-2") #ingreso el -2
+        
+        time.sleep(3) 
+        guardar = driver.find_element_by_xpath('//*[@id="save-button"]') 
+        guardar.click() #guardo el cambio con el -2 
 
+        evaluar_guardar= driver.find_element_by_xpath('//*[@id="save-button"]').is_enabled()
 
+        cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
+        cerrar_modal.click() #cierro modal
+
+        time.sleep(3) 
+       
+        self.assertIs(evaluar_guardar,False, 'se cargo el producto negativo')
+    """    
      #-------------ACTIVIDAD 3  - punto  3)  b) ------------------------------------------------------------------------------
-
+    
     def test_de_selenium_eliminar(self):
         o = Order(id=1)
         db.session.add(o)
@@ -126,6 +137,6 @@ class Ordering(unittest.TestCase):
         delete_product_button.click()
         time.sleep(4)
         self.assertRaises(NoSuchElementException, driver.find_element_by_xpath, "xpath")
-
+    """
 if __name__ == "__main__":
     unittest.main() 

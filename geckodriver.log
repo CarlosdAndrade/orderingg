@@ -2833,3 +2833,22 @@ JavaScript warning: http://localhost:5000/static/js/api.js, line 94: unreachable
 1527520573057	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
 1527520578103	Marionette	INFO	Listening on port 33453
 1527520578212	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528009814780	geckodriver	INFO	geckodriver 0.18.0
+1528009814788	geckodriver	INFO	Listening on 127.0.0.1:59269
+1528009816024	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1528009821133	Marionette	INFO	Listening on port 42615
+1528009821161	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528009836344	geckodriver	INFO	geckodriver 0.18.0
+1528009836350	geckodriver	INFO	Listening on 127.0.0.1:54607
+1528009837591	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1528009842991	Marionette	INFO	Listening on port 34567
+1528009843034	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 16229, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1528009846885	geckodriver	INFO	geckodriver 0.18.0
+1528009846894	geckodriver	INFO	Listening on 127.0.0.1:52261
+1528009848128	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1528009853178	Marionette	INFO	Listening on port 41837
+1528009853260	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 16343, Chrome_ChildThread] WARNING: pipe error (3): Conexión reinicializada por la máquina remota: file /build/firefox-lojCEZ/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

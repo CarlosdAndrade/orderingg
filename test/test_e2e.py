@@ -104,9 +104,7 @@ class Ordering(unittest.TestCase):
         canti.send_keys("-2") #ingreso el -2
         
         time.sleep(3) 
-        guardar = driver.find_element_by_xpath('//*[@id="save-button"]') 
-        guardar.click() #guardo el cambio con el -2 
-
+        
         evaluar_guardar= driver.find_element_by_xpath('//*[@id="save-button"]').is_enabled()
 
         cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')

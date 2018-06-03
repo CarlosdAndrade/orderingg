@@ -104,32 +104,28 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         self.assertNotEqual(150, totalPrice, "El precio total no se calcula bien")   
 
 
-
         # ACTIVIDAD 3 - punto 2) a)  
-
+    
     def test_orderProduct_neg (self):   #self tiene la referencia del objeto que llamo al metodo.        
-        p = Product (name='mantel', price=70)
+        #correcion al no asignar un id al producto para posterior relacion y comparacion
+        p = Product (id= 1, name='mantel', price=70)
         db.session.add(p)
-        db.session.commit()
-        
+                
         o = Order(id=1)
         db.session.add(o)   
         db.session.commit()
 
+        #relacion con el order y agrego un quantity negativo
         orderP = OrderProduct(order_id=1, product_id=1,quantity=-5,product=p)      
-        o.products.append(orderP)
-        db.session.add(o)
-        db.session.commit()
-        op = OrderProduct.query.all()
+        db.session.add(orderP)
+        db.session.commit() 
 
-        if len(op) == 0: 
-            print ("No se creo el producto") 
-        else:
-            print ("Se creo el producto")
-
-
-        #  ACTIVIDAD 3 - punto 2) b) 
-
+        existe = OrderProduct.query.all()
+        #voy a usar el assertEqual y no el assertTrue o False ya que me da un mejor msj de error, en caso de error
+        #correcion sintaxis/ interpretacion, resolviendo con assert...
+        #pruebo que los argumentos Si son iguales. Si los valores NO son iguales, la prueba falla
+        self.assertEqual(len(existe),1,"No paso el test,se creo el producto")
+        # db.session.rollback ()
 
     def test_Get_funcionamiento (self):
         #creo un producto nuevo

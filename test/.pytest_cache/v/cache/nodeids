@@ -1,4 +1,5 @@
 [
+  "test_e2e.py::Ordering::test_Name_Aparece",
   "test_e2e.py::Ordering::test_Notificacion_Aparece",
   "test_e2e.py::Ordering::test_title"
 ]

@@ -47,6 +47,31 @@ class Ordering(unittest.TestCase):
         modal = driver.find_element_by_id('modal')
         assert modal.is_displayed(), "El modal no esta visible"
 
+    #Opcional 1b) asignada
+    def test_Name_Aparece(self):
+        # Genero producto
+        p = Product(id=1, name='', price=500)
+        db.session.add(p)
+        # Genero una order
+        o = Order(id=1)
+        db.session.add(o)
+
+        # Asigno la orden al producto creado
+        op = OrderProduct(order_id=1, product_id=1, product=p, quantity=1)
+        db.session.add(op)
+        db.session.commit()
+
+        # Me traigo la base
+        driver = self.driver
+        driver.get(self.baseURL)
+        time.sleep(4)
+
+        # Busco los nombres de la tabla
+        name = driver.find_element_by_xpath('/html/body/main/div[2]/div/table/tbody/tr[1]/td[2]')
+
+        # Verifico que aparezcan los nombres
+        self.assertEqual(name.text, '', "No aparecen los nombres de los productos")
+
         # ACTIVIDAD OPCIONAL ASIGNADA 2)b)
 
     def test_Notificacion_Aparece(self):

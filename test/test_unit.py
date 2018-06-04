@@ -48,6 +48,37 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
+    def test_method_get_product(self):
+        p = Product(id=1, name="Cuchillo", price=20) # Creo un producto ya que la BD esta vacía
+        db.session.add(p)
+        db.session.commit()
+        resp = self.client.get('/product')
+        self.assert200(resp, 'No se realizo la transacción del método GET')
+        data = json.loads(resp.data)
+        assert data[0]['id'] == 1, 'El método GET Product Fallo'
+
+
+    def test_quantity_negativa(self):
+             p=Product(id=1, name="Cuchillo", price=20) # Creo un producto ya que la BD esta vacía
+             db.session.add(p)
+             o=Order(id= 8)
+             db.session.add(o)
+             ord=OrderProduct(order_id= 8,product_id= 1,product= p,quantity= -2)
+             db.session.add(ord)
+             db.session.commit()
+             res=self.client.get('order/8/product/1')
+             self.assert200 (res,'No se realizo la transacción correctamente')
+             data= json.loads(res.data)
+             assert data['id'] == 1, 'Fallo el test se agrego un producto con cantidad negativa'
+
+    def test_metodo_get_order(self):
+             o=Order(id= 8)
+             db.session.add(o)
+             db.session.commit()
+             resp = self.client.get('/order')
+             self.assert200(resp, 'No se realizo la transacción del método GET')
+             data = json.loads(resp.data)
+             assert data[0]['id'] == 8, 'El método GET Order Fallo'
 
      #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
 
@@ -66,7 +97,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         data = {
             'quantity': 10
         }
-        self.client.put('order/1/product/1', data=json.dumps(data), content_type='application/json')
+        resp=self.client.put('order/1/product/1', data=json.dumps(data), content_type='application/json')
         arg = 1,1
         prod = OrderProduct.query.get(arg)
 

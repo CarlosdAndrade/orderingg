@@ -1,11 +1,10 @@
 {
-  "test_e2e.py::LiveServerTestCase": true, 
-  "test_e2e.py::Ordering::test_cant_negativo": true, 
-  "test_e2e.py::Ordering::test_cantidadNegativa": true, 
-  "test_e2e.py::Ordering::test_de_selenium_eliminar": true, 
-  "test_e2e.py::Ordering::test_prueba": true, 
-  "test_unit.py::OrderingTestCase::test_cargar_negativo": true, 
-  "test_unit.py::OrderingTestCase::test_crear_producto_cantidad_no_negativa": true, 
-  "test_unit.py::OrderingTestCase::test_prueba": true, 
-  "test_unit.py::OrderingTestCase::test_put": true
+  "test_e2e.py::LiveServerTestCase": true,
+  "test_e2e.py::Ordering::test_cant_negativo": true,
+  "test_e2e.py::Ordering::test_cantidadNegativa": true,
+  "test_e2e.py::Ordering::test_de_selenium_eliminar": true,
+  "test_e2e.py::Ordering::test_prueba": true,
+  "test_unit.py::OrderingTestCase::test_cargar_negativo": true,
+  "test_unit.py::OrderingTestCase::test_crear_producto_cantidad_no_negativa": true,
+  "test_unit.py::OrderingTestCase::test_prueba": true
 }

@@ -1,13 +1,4 @@
 [
-  "test_unit.py::OrderingTestCase::test_Get_funcionamiento",
-  "test_unit.py::OrderingTestCase::test_OrderPrice",
-  "test_unit.py::OrderingTestCase::test_borrar",
-  "test_unit.py::OrderingTestCase::test_crear_producto",
-  "test_unit.py::OrderingTestCase::test_iniciar_sin_productos",
-  "test_unit.py::OrderingTestCase::test_method_get_product",
-  "test_unit.py::OrderingTestCase::test_metodo_get_order",
-  "test_unit.py::OrderingTestCase::test_name_vacio",
-  "test_unit.py::OrderingTestCase::test_orderProduct_neg",
-  "test_unit.py::OrderingTestCase::test_put",
-  "test_unit.py::OrderingTestCase::test_quantity_negativa"
+  "test_e2e.py::Ordering::test_Notificacion_Aparece",
+  "test_e2e.py::Ordering::test_title"
 ]

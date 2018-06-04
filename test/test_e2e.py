@@ -12,6 +12,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 from werkzeug.serving import make_server
 
+
 class Ordering(unittest.TestCase):
     # Creamos la base de datos de test
     def setUp(self):
@@ -37,7 +38,7 @@ class Ordering(unittest.TestCase):
         time.sleep(1)
 
         self.driver = webdriver.Firefox()
-        
+
     def test_title(self):
         driver = self.driver
         driver.get(self.baseURL)
@@ -46,95 +47,65 @@ class Ordering(unittest.TestCase):
         modal = driver.find_element_by_id('modal')
         assert modal.is_displayed(), "El modal no esta visible"
 
-     
-     #-------------ACTIVIDAD 3 - punto 1)  b) -------------------------------------------------------
-    
-    def test_InfoModalEditar(self):
-        o = Order(id= 1)
-        db.session.add(o)
-        p = Product(id= 1, name= 'vaso', price= 500)
-        db.session.add(p)
+        # ACTIVIDAD OPCIONAL ASIGNADA 2)b)
 
-        orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 1, product= p)
-        db.session.add(orderProduct)
+    def test_Notificacion_Aparece(self):
 
-        db.session.commit()
- 
-        driver = self.driver
-        driver.get(self.baseURL)
-        time.sleep(5)
+          # Genero producto
+          p = Product(id=1, name='Vaso', price=500)
+          db.session.add(p)
+          # Genero una order
+          o = Order(id=1)
+          db.session.add(o)
 
-        edit_product_button = driver.find_element_by_xpath('/html/body/main/div[2]/div/table/tbody/tr[1]/td[6]/button[1]')
-        edit_product_button.click()
+          # Asigno la orden al producto creado
+          op = OrderProduct(order_id=1, product_id=1, product=p, quantity=1)
+          db.session.add(op)
+          db.session.commit()
 
-        producto = driver.find_element_by_xpath('//*[@id="select-prod"]')
-        cantidad = driver.find_element_by_xpath('//*[@id="quantity"]')
-        value_prod = producto.get_attribute("value")
-        value_cant = cantidad.get_attribute("value")
-        boton_cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
-        time.sleep(5)
-        boton_cerrar_modal.click()
-        self.assertTrue(value_prod != "", "No tiene informacion")
-        self.assertTrue(value_cant != "", "No tiene informacion")
-    
-     # ------------ACTIVIDAD 3 - punto 2) c) -----------------------------------------------------------------------
-    
-    def test_selenium_cant_negativa(self):
+          # Me traigo la base
+          driver = self.driver
+          driver.get(self.baseURL)
+          time.sleep(4)
 
-        #Primero levanto la base y dejo corriendo el server para que se ejecuten los test
-        #no necesito crear ningun producto si lo que quiero testear es la cantidad negativa, lo hago con el producto vaso
-        driver = self.driver
-        driver.get(self.baseURL)
+          # Tomo la ruta del boton agregar producto copiando su xpath
+          agregar = driver.find_element_by_xpath("/html/body/main/div[1]/div/button").click()
 
-        #abro el modal con un click en Agregar
-        selec_boton_agregar = driver.find_element_by_xpath('/html/body/main/div[1]/div/button')
-        selec_boton_agregar.click()
-        
-        #selecciono un producto 
-        selec_producto = driver.find_element_by_xpath('//*[@id="select-prod"]')
-        selec_producto.click()
-        
-        #selecciono el producto individual
-        selecciono_vaso = driver.find_element_by_xpath('/html/body/main/div[3]/div[2]/section/form/div[1]/div/div/select/option[5]')
-        selecciono_vaso.click()
+          # Busco el elemento seleccionar producto
+          selecproducto = driver.find_element_by_id('select-prod')
+          selecproducto.click()
 
-        #agrego una cantidad negativa y trato de guardarlo
-        canti= driver.find_element_by_xpath('//*[@id="quantity"]')
-        canti.clear() #elimino el 1 predeterminado que ya esta cargado y fuerzo el ingreso del -2
-        canti.send_keys("-2") #ingreso el -2
-        
-        time.sleep(3) 
-        
-        evaluar_guardar= driver.find_element_by_xpath('//*[@id="save-button"]').is_enabled()
+          # Abro la lista desplegable y elijo el producto Vaso que se encuentra en la opción 2
+          selecc_prod_opc = driver.find_element_by_xpath('//*[@id="select-prod"]/option[2]')
+          selecc_prod_opc.click()
 
-        cerrar_modal = driver.find_element_by_xpath('//*[@id="modal"]/div[2]/footer/button[3]')
-        cerrar_modal.click() #cierro modal
+          # Busco el elemento cantidad
+          cantidad = driver.find_element_by_xpath('//*[@id="quantity"]')
 
-        time.sleep(3) 
-       
-        self.assertIs(evaluar_guardar,False, 'se cargo el producto negativo')
-    """    
-     #-------------ACTIVIDAD 3  - punto  3)  b) ------------------------------------------------------------------------------
-    
-    def test_de_selenium_eliminar(self):
-        o = Order(id=1)
-        db.session.add(o)
+          # Edito la cantidad
+          cant_val = 3
+          cantidad.send_keys(str(cant_val))
 
-        p = Product(id=1, name='Cuchillo', price=20)
-        db.session.add(p)
+          #Busco el elemento guardar y le hago un click
+          guardar = driver.find_element_by_xpath('//*[@id="save-button"]')
+          guardar.click()
 
-        orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
-        db.session.add(orderProduct)
-        db.session.commit()
+          # busco el elemento notificacion
+          notificacion = driver.find_element_by_xpath('//*[@id="select"]/p')
 
-        driver = self.driver
-        driver.get(self.baseURL)
-        time.sleep(4)
-        delete_product_button = driver.find_element_by_xpath(
-            '/html/body/main/div[2]/div/table/tbody/tr[1]/td[6]/button[2]')
-        delete_product_button.click()
-        time.sleep(4)
-        self.assertRaises(NoSuchElementException, driver.find_element_by_xpath, "xpath")
-    """
+          # verifico que aparesca la notificacion
+          self.assertEqual(notificacion.is_displayed(),True,"No pararece la notifacion de producto duplicado")
+
+
+
+
+    def tearDown(self):
+        self.driver.get('http://localhost:5000/shutdown')
+        db.session.remove()
+        db.drop_all()
+        self.driver.close()
+        self.app_context.pop()
+
+
 if __name__ == "__main__":
-    unittest.main() 
+    unittest.main()

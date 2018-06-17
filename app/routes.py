@@ -2,7 +2,7 @@ from sqlalchemy import and_
 
 from app import db
 from app.models import Product, Order, OrderProduct
-from flask import request, jsonify, render_template, abort, current_app
+from flask import request, jsonify, render_template
 from flask import Blueprint
 rest = Blueprint('rest', __name__, template_folder='templates')
 
@@ -50,7 +50,7 @@ def order(pk):
 
     # Si la orden no existe, levantamos el error
     if (not order):
-        return jsonify({ 'error': 'not-found' }), 404
+        return jsonify({'error': 'not-found'}), 404
 
     return jsonify(order.serialize)
 
@@ -61,7 +61,7 @@ def addProductToOrder(pk):
 
     # Si la orden no existe, levantamos el error
     if (not order):
-        return jsonify({ 'error': '<order {}> not found'.format(pk) }), 404
+        return jsonify({'error': '<order {}> not found'.format(pk)}), 404
 
     product_data = request.get_json()
     product = product_data['product']
@@ -74,7 +74,7 @@ def addProductToOrder(pk):
     if (product_exists):
         return jsonify({
             'error': '<product {}> exists in <order {}>. Use PUT method'
-                .format(product['id'], pk)
+            .format(product['id'], pk)
         }), 400
 
     orderProduct = OrderProduct(quantity=product_data['quantity'])

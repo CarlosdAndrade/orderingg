@@ -2,9 +2,8 @@ import os
 import unittest
 
 import os
-import unittest 
-
-        #modulo de unittest, me permite realizar los test de nuestra aplicacion
+import unittest
+#modulo de unittest, me permite realizar los test de nuestra aplicacion
 from flask import json
 from flask_testing import TestCase
 from app import create_app, db
@@ -12,7 +11,8 @@ from app.models import Product, Order, OrderProduct
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nuestros tests
+class OrderingTestCase(TestCase):
+    #Creacion de una clase que contiene todos nuestros tests
         
     def create_app(self):
         config_name = 'testing'
@@ -137,13 +137,13 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
     	
     	self.client.post('/product', data=json.dumps(p), content_type='application/json')
     	
-    	#creo, guardo la order de este producto nuevo y lo cargo
+    	# creo, guardo la order de este producto nuevo y lo cargo
     	o = Order(id=1)
     	db.session.add(o)
     	db.session.commit()        
     	
     	#voy a usar client de prueba POST y GET
-    	op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
+    	op = {'quantity': 10, "order_id": 1, "product": p, "product": {"id": 1}}
     	#Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
     	self.client.post('/order/1/product', data=json.dumps(op), content_type='application/json')
     	
@@ -153,22 +153,22 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
     	#CORRECION VISTA EN CLASE, SE MODIFICO EL ENDPOINT, TENIA MAL EL CONCEPTO!!        
 
 
-     #-------------------- ACTIVIDAD 3) - punto 3) a)------------------------------------------------------------
+#   ACTIVIDAD3)-punto 3)a)
    
     def test_borrar(self):
-      o = Order(id=1)
-      db.session.add(o)
+        o = Order(id=1)
+        db.session.add(o)
 
-      p = Product(id=1, name='Cuchillo', price=20)
-      db.session.add(p)
+        p = Product(id=1, name='Cuchillo', price=20)
+        db.session.add(p)
 
-      orderProduct = OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
-      db.session.add(orderProduct)
-      db.session.commit()
+        orderProduct=OrderProduct(order_id=1, product_id=1, quantity=1, product=p)
+        db.session.add(orderProduct)
+        db.session.commit()
 
-      resp = self.client.delete('order/1/product/1')
+        resp = self.client.delete('order/1/product/1')
 
-      self.assert200(resp, "Fallo el DELETE")
+        self.assert200(resp, "Fallo el DELETE")
 
      
      #--------------------- ACTIVIDAD 3) - punto 3) c)-----------------------------------------------------------

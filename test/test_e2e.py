@@ -10,10 +10,10 @@ from app.models import Product, Order, OrderProduct
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-from werkzeug.serving import make_server
+from werkzeug.serving import make_server 
 
 class Ordering(unittest.TestCase):
-    # Creamos la base de datos de test
+     # Creamos la base de datos de test
     def setUp(self):
         self.app = create_app()
         self.app.config.update(
@@ -37,7 +37,7 @@ class Ordering(unittest.TestCase):
         time.sleep(1)
 
         self.driver = webdriver.Firefox()
-        
+
     def test_title(self):
         driver = self.driver
         driver.get(self.baseURL)

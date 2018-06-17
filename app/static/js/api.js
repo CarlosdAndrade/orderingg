@@ -57,10 +57,10 @@ const API = (function () {
     function deleteProduct(orderId, productId) {
         return fetch(`/order/${ orderId }/product/${ productId }`,
             {
-                method: 'DELETE',
+                method: "DELETE",
                 headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
                 }
             }
         ).then(function toJson(r) {
@@ -76,10 +76,10 @@ const API = (function () {
 
         return fetch(`/order/${ orderId }/product`,
             {
-                method: 'POST',
+                method: "POST",
                 headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
                 },
                 body: data
             }

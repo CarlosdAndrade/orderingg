@@ -1,0 +1,16 @@
+Para flake8 se uso los comandos de clase + el "python flake8 lint" para facilitar el uso de los puntos
+Los fix hechos fueron los siguientes:
+
+./test/test_e2e.py:40:1: W293 blank line contains whitespace
+./test/test_unit.py:159:7: E111 indentation is not a multiple of four
+./test/test_unit.py:156:5: E303 too many blank lines (2)
+./test/test_unit.py:165:80: E501 line too long (84 > 79 characters)
+./app/routes.py:5:1: F401 'flask.abort' imported but unused
+./app/routes.py:53:25: E201 whitespace after '{'
+./app/routes.py:77:17: E131 continuation line unaligned for hanging indent
+./app/__init__.py:19:12: W292 no newline at end of file
+./test/test_unit.py:146:23: E231 missing whitespace after ':'
+./test/test_unit.py:146:5: W191 indentation contains tabs
+./test/test_unit.py:140:6: E265 block comment should start with '# '
+
+

@@ -48,13 +48,13 @@ class OrderingTestCase(TestCase):
 
         resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
 
-
-     #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
+    
+         #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
 
     def test_put(self):
         #Creo la orden
         o = Order(id= 1)
-        db.session.add(o)   
+        db.session.add(o)
 
         #Creo el producto
         p = Product(id= 1, name= 'vaso', price= 500)
@@ -71,40 +71,31 @@ class OrderingTestCase(TestCase):
         prod = OrderProduct.query.get(arg)
 
         self.assertTrue(prod.quantity == 10, "Fallo el metodo PUT")
-        self.assert200(resp, "Fallo el funcionamiento del metodo PUT")
-
-        # Verifica que la respuesta tenga el estado 200 (OK)
-        self.assert200(resp, "Fallo el POST")
-        p = Product.query.all()
-
-        # Verifica que en la lista de productos haya un solo producto
-        self.assertEqual(len(p), 1, "No hay productos")
-     
-
-     #--------------------ACTIVIDAD 3 - punto 1) c) ------------------------------------------------
-    
-    def test_OrderPrice(self): 
         
+    #--------------------ACTIVIDAD 3 - punto 1) c) ------------------------------------------------
+
+    def test_OrderPrice(self):
+
         #Creo la orden
         o = Order(id= 1)
         db.session.add(o)
-        
+
         #Creo el producto
         p = Product(id= 1, name= 'vaso', price= 500)
         db.session.add(p)
-        
+
         #Creo la relacion entre el producto y la orden
         orderProduct = OrderProduct(order_id= 1, product_id= 1, quantity= 10, product= p)
         db.session.add(orderProduct)
         db.session.commit()
-        
+
         #Verifico que el primero y el segundo sean distintos 
         orden= Order.query.get(1)
         totalPrice = orden.orderPrice
         self.assertNotEqual(150, totalPrice, "El precio total no se calcula bien")   
 
 
-        # ACTIVIDAD 3 - punto 2) a)  
+    # ACTIVIDAD 3 - punto 2) a)  
     
     def test_orderProduct_neg (self):   #self tiene la referencia del objeto que llamo al metodo.        
         #correcion al no asignar un id al producto para posterior relacion y comparacion
@@ -183,7 +174,7 @@ class OrderingTestCase(TestCase):
 
         #self.assert (resp != 200, 'Fallo el test, se creo un producto de nombre vacio')
 
-
+    
 # El  if __name__ == '__main__': sirve para que mi fichero test_unit.py se ejecuten, desde la terminal de forma automatica, todos los tests creados
 if __name__ == '__main__':
     unittest.main()

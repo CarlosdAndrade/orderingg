@@ -28,6 +28,7 @@ def products():
         p = Product.query.all()
         return jsonify([i.serialize for i in p])
 
+
 @rest.route("/order", methods=['GET'])
 def orders():
     """

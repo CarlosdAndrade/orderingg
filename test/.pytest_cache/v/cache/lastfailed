@@ -1,5 +1,10 @@
 {
-  "test_e2e.py": true, 
-  "test_e2e.py::LiveServerTestCase": true, 
-  "test_e2e.py::Ordering": true
+  "PruebaI.py::Ordering::test_existe_notificacion": true,
+  "test_e2e.py::LiveServerTestCase": true,
+  "test_e2e.py::Ordering": true,
+  "test_e2e.py::Ordering::test_InfoModalEditar": true,
+  "test_e2e.py::Ordering::test_de_selenium_eliminar": true,
+  "test_e2e.py::Ordering::test_selenium_cant_negativa": true,
+  "test_e2e.py::Ordering::test_title": true,
+  "test_unit.py::OrderingTestCase::test_put": true
 }

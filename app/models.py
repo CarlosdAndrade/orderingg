@@ -91,9 +91,9 @@ class OrderProduct(db.Model):
         :return:
         """
         return {
-            'id': self.product.id,
-            'name': self.product.name,
-            'price': self.product.price,
-            'quantity': self.quantity,
-            'totalPrice': self.totalPrice
+               'id': self.product.id,
+               'name': self.product.name,
+               'price': self.product.price,
+               'quantity': self.quantity,
+               'totalPrice': self.totalPrice
         }

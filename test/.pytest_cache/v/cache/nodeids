@@ -1,6 +1,6 @@
 [
-  "test_unit.py::OrderingTestCase::test_GET_funcionamiento", 
-  "test_unit.py::OrderingTestCase::test_crear_producto", 
-  "test_unit.py::OrderingTestCase::test_iniciar_sin_productos", 
-  "test_unit.py::OrderingTestCase::test_orderProduct_neg"
+  "PruebaI.py::Ordering::test_InfoModalEditar",
+  "PruebaI.py::Ordering::test_Name_Aparece",
+  "PruebaI.py::Ordering::test_Notificacion_Aparece",
+  "PruebaI.py::Ordering::test_title"
 ]

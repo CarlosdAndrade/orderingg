@@ -117,3 +117,4 @@ def order_product_detail(pk_order, pk_product):
 
     db.session.commit()
     return jsonify(order_product_json)
+

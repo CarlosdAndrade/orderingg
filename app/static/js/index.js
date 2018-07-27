@@ -1,5 +1,5 @@
 (function () {
-    const $totalPrice = document.querySelector('#total-price');
+    const $totalPrice = document.querySelector("#total-price");
 
     // Estado de la aplicacion
     const state = {
@@ -7,9 +7,9 @@
         selectedProduct: null,
         quantity: 0,
         order: API.getOrder()
-    }
+    };
 
-    const refs = {}
+    const refs = {};
 
     /**
      * Actualiza el valor del precio total
@@ -17,9 +17,9 @@
     function updateTotalPrice() {
         try {
             const totalPrice = state.selectedProduct.price * state.quantity;
-            $totalPrice.innerHTML = `Precio total: $ ${totalPrice}`
+            $totalPrice.innerHTML = `Precio total: $ ${totalPrice}`;
         } catch (e) {
-            $totalPrice.innerHTML = '';
+            $totalPrice.innerHTML = "";
         }
     }
 
@@ -115,10 +115,10 @@
 
         refs.global = {
             onDeleteProduct
-        }
+        };
     }
 
     init();
     window.refs = refs;
-})()
+})();
 

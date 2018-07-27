@@ -1,10 +1,9 @@
 [
-  "test/test_unit.py::OrderingTestCase::test_Get_funcionamiento", 
-  "test/test_unit.py::OrderingTestCase::test_OrderPrice", 
-  "test/test_unit.py::OrderingTestCase::test_borrar", 
-  "test/test_unit.py::OrderingTestCase::test_crear_producto", 
-  "test/test_unit.py::OrderingTestCase::test_iniciar_sin_productos", 
-  "test/test_unit.py::OrderingTestCase::test_name_vacio", 
-  "test/test_unit.py::OrderingTestCase::test_orderProduct_neg", 
-  "test/test_unit.py::OrderingTestCase::test_put"
+  "test/test_unit.py::OrderingTestCase::test_Get_funcionamiento",
+  "test/test_unit.py::OrderingTestCase::test_OrderPrice",
+  "test/test_unit.py::OrderingTestCase::test_borrar",
+  "test/test_unit.py::OrderingTestCase::test_crear_producto",
+  "test/test_unit.py::OrderingTestCase::test_iniciar_sin_productos",
+  "test/test_unit.py::OrderingTestCase::test_name_vacio",
+  "test/test_unit.py::OrderingTestCase::test_orderProduct_neg"
 ]

@@ -13,7 +13,7 @@ const Modal = (function () {
                     config.onChangeQunatity(this.$el.value);
                 }
 
-                this.toggleError()
+                this.toggleError();
             });
 
             return this;
@@ -63,7 +63,7 @@ const Modal = (function () {
             el: '#quantity',
             onChangeQunatity: function (quantity) {
                 toggleButtons();
-                config.onChangeQunatity(quantity)
+                config.onChangeQunatity(quantity);
             }
         }, $modal);
 
@@ -106,12 +106,12 @@ const Modal = (function () {
             $edit,
             $save,
             $editTitle: $modal.querySelector('#edit-title'),
-            $saveTitle: $modal.querySelector('#save-title'),
+            $saveTitle: $modal.querySelector('#save-title')
         };
 
-        modal.close = close.bind(modal),
-        modal.open = open.bind(modal)
-        modal.openEdit = openEdit.bind(modal)
+        modal.close = close.bind(modal);
+        modal.open = open.bind(modal);
+        modal.openEdit = openEdit.bind(modal);
 
         toggleButtons();
         return modal;

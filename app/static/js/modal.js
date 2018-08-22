@@ -4,7 +4,7 @@
         /**
          * Inicializa el input quantity
          **/
-        init: function (config, context) {
+        init: function  (config,context) {
             this.$el = context.querySelector(config.el);
 
             // Nos ponemos a escuchar cambios en el input de cantidad

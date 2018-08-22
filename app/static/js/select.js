@@ -111,8 +111,8 @@
         $help.classList.add('is-hidden');
         this.$el.querySelector('.select').classList.remove('is-danger');
     }
-
-    return {
-        init
+    /**115:5  error  Parsing error: 'return' outside of function
+    return { 
+        init 
     };
-})()
+    */

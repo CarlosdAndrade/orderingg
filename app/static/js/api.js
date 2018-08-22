@@ -96,4 +96,5 @@ const API = (function () {
         deleteProduct,
         addProduct
     }
+
 }

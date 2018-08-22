@@ -1,6 +1,4 @@
-const Table = (function () {
-    const source = document.getElementById('table-template').innerHTML;
-    const template = Handlebars.compile(source);
+
 
     /*
      * Inicializa la tabla.
@@ -20,7 +18,7 @@ const Table = (function () {
         // la tabla
         if (config.data instanceof Promise) {
             config.data.then(function (data) {
-                render($el, data)
+                render($el, data);
             });
         } else {
             data = {};
@@ -47,3 +45,4 @@ const Table = (function () {
         init
     };
 })()
+;

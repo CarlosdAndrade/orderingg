@@ -1,8 +1,7 @@
 import os 
 import unittest
 
-import os
-import unittest 
+        #F811 redifiniciones de lineas no utilizadas
 
         #modulo de unittest, me permite realizar los test de nuestra aplicacion
 from flask import json
@@ -13,7 +12,7 @@ from app.models import Product, Order, OrderProduct
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nuestros tests
-        
+
     def create_app(self):
         config_name = 'testing'
         app = create_app()
@@ -46,8 +45,7 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
             'price': 50
         }
 
-        resp = self.client.post('/product', data=json.dumps(data), content_type='application/json')
-
+        # CODIGO F841 variable local "resp" asignada que no fue utilizada 
 
      #--------------------ACTIVIDAD 3 - punto 1) a) ----------------------------------------------------------
 
@@ -71,10 +69,10 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
         prod = OrderProduct.query.get(arg)
 
         self.assertTrue(prod.quantity == 10, "Fallo el metodo PUT")
-        self.assert200(resp, "Fallo el funcionamiento del metodo PUT")
+        #F821 nombre 'resp' indefinido
 
         # Verifica que la respuesta tenga el estado 200 (OK)
-        self.assert200(resp, "Fallo el POST")
+        #F821 nombre 'resp' indefinido
         p = Product.query.all()
 
         # Verifica que en la lista de productos haya un solo producto
@@ -143,10 +141,11 @@ class OrderingTestCase(TestCase): # Creacion de una clase que contiene todos nue
     	db.session.commit()        
     	
     	#voy a usar client de prueba POST y GET
-    	op = {"quantity" :10,"order_id":1,"product":p,"product":{"id":1}}
+    	op = {"quantity" :10,"order_id":1,"product":1}
     	#Me creo el OrderProduct usando POST como solicitud para agregar el nuevo producto
     	self.client.post('/order/1/product', data=json.dumps(op), content_type='application/json')
-    	
+    	#CODIGO F601 la clave 'product' se repite con diferentes valores
+
     	#Realizo la solicitud GET que me transmita los datos del client
     	resp = self.client.get('/order/1/product/1')
     	self.assert200(resp, "No se cargo el producto")
